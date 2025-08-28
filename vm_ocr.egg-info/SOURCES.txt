@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+vm_ocr/__init__.py
+vm_ocr/cluster.py
+vm_ocr/file_extensions_process.py
+vm_ocr/models.py
+vm_ocr/ocr.py
+vm_ocr/prompts.py
+vm_ocr.egg-info/PKG-INFO
+vm_ocr.egg-info/SOURCES.txt
+vm_ocr.egg-info/dependency_links.txt
+vm_ocr.egg-info/requires.txt
+vm_ocr.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+#version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "12052:12052"
+    # volumes:
+    #   # Optional: mount source for live reload during development
+    #   - ./:/app
+    command: /py/bin/hypercorn api:app --bind 0.0.0.0:12052 --workers 1
+    environment:
+      - DEBUG=1
+    # No database needed for this OCR service
+    depends_on: []
+    
+# No named volumes required; keeping the section for parity with your format
+volumes: {}
