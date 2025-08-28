@@ -9,4 +9,4 @@ opencv-python-headless==4.10.0.84
 beautifulsoup4==4.13.4
 numpy==1.26.4
 python-multipart==0.0.9
-flake8>=4.0.1,<4.1
+
