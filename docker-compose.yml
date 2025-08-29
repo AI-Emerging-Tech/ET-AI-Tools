@@ -4,6 +4,8 @@ services:
   app:
     build:
       context: .
+      args:
+        INSTALL_DEV: "true"
     ports:
       - "12052:12052"
     # volumes:
