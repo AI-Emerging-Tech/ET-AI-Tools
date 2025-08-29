@@ -24,13 +24,13 @@ RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /
 WORKDIR /vm_ocr
 
 COPY requirements.txt /tmp/requirements.txt
-COPY requirements-dev.txt /tmp/requirements-dev.txt
+# COPY requirements-dev.txt /tmp/requirements-dev.txt
 
 
 RUN /py/bin/pip install --no-cache-dir -r /tmp/requirements.txt
-RUN if [ "$INSTALL_DEV" = "true" ]; then \
-      pip install --no-cache-dir -r /tmp/requirements-dev.txt; \
-    fi
+# RUN if [ "$INSTALL_DEV" = "true" ]; then \
+#       pip install --no-cache-dir -r /tmp/requirements-dev.txt; \
+#     fi
 COPY . .
 
 EXPOSE 12052
